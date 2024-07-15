@@ -40,8 +40,6 @@ const Header = ({ theme, toggleTheme, setFilters }) => {
           src={`${process.env.PUBLIC_URL}/images/logo.svg`}
           alt="logo"
           onClick={handleLogoClick}
-          alt="logo"
-          onClick={handleLogoClick}
         />
         <nav className="navigation">
           <div className="column">

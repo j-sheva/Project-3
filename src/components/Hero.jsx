@@ -6,10 +6,9 @@ const Hero = ({ theme }) => {
     <div className="hero">
       <img
         className="men"
-        src="/images/men.png"
-        alt="3 men in the restuarant"
+        src={`${process.env.PUBLIC_URL}/images/men.png`}
+        alt="3 men in the restaurant"
       />
-
       <div className={`hero__header-wrapper ${theme}`}>
         <h1 className={`hero__header ${theme}`}>The News Magazine</h1>
       </div>
@@ -25,7 +24,11 @@ const Hero = ({ theme }) => {
           ullamcorper.
         </p>
       </div>
-      <img className="man" src="/images/man.png" alt="a man with a hat" />
+      <img
+        className="man"
+        src={`${process.env.PUBLIC_URL}/images/man.png`}
+        alt="a man with a hat"
+      />
     </div>
   );
 };
