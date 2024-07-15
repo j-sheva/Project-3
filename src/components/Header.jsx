@@ -37,7 +37,7 @@ const Header = ({ theme, toggleTheme, setFilters }) => {
       <div className="header">
         <img
           className="logo"
-          src="../../logo.svg"
+          src="../image/logo.svg"
           alt="logo"
           onClick={handleLogoClick}
         />
