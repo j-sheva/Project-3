@@ -17,7 +17,6 @@ function App() {
   useEffect(() => {
     document.body.className = theme;
   }, [theme]);
-
   const toggleTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
