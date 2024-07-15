@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+.hero {
+  position: relative;
+  padding: 32px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 24px;
+}
+.hero__header-wrapper {
+  position: absolute;
+  left: 27.8%;
+  height: 97px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  right: 32px;
+  top: 80px;
+}
+.hero__header-wrapper.light {
+  background-color: black;
+}
+.hero__header-wrapper.dark {
+  background-color: rgb(255, 255, 255);
+}
+
+.hero__header {
+  font-family: 'Bodoni Moda';
+  font-size: 78px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 24px;
+  text-align: left;
+}
+
+.hero__header.light {
+  color: rgb(255, 255, 255);
+}
+
+.hero__header.dark {
+  color: rgb(0, 0, 0);
+}
+
+.hero__text-wrapper {
+  padding-top: 140px;
+}
+.hero__text {
+  text-align: left;
+}
+
+.men {
+  width: 25%;
+  object-fit: contain;
+}
+
+.man {
+  width: 50%;
+  object-fit: contain;
+}

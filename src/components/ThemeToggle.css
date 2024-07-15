@@ -1,0 +1,22 @@
+.toggle {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  border: 0.5px solid white;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+}
+
+.toggle img {
+  width: 16px;
+  height: 16px;
+}

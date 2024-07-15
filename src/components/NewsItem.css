@@ -1,0 +1,35 @@
+.news-item {
+  width: 28%;
+  border: 1px solid #7a7a7a;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+.news-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.news-item h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.news-item p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.news-item a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.news-item a:hover {
+  text-decoration: underline;
+}
