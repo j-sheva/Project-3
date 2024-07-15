@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import NewsList from './components/NewsList';
 import Filters from './components/Filters';
@@ -23,9 +23,13 @@ function App() {
   };
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div className={`App ${theme}`}>
-        <Header theme={theme} toggleTheme={toggleTheme} />
+        <Header
+          theme={theme}
+          toggleTheme={toggleTheme}
+          setFilters={setFilters}
+        />
         <Hero theme={theme} />
         <Filters theme={theme} setFilters={setFilters} />
         <Routes>
