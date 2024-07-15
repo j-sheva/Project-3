@@ -23,13 +23,9 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className={`App ${theme}`}>
-        <Header
-          theme={theme}
-          toggleTheme={toggleTheme}
-          setFilters={setFilters}
-        />
+        <Header theme={theme} toggleTheme={toggleTheme} />
         <Hero theme={theme} />
         <Filters theme={theme} setFilters={setFilters} />
         <Routes>
