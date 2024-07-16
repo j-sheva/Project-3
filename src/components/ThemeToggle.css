@@ -20,3 +20,16 @@
   width: 16px;
   height: 16px;
 }
+
+@media (max-width: 1024px) {
+  .toggle {
+    top: 32px;
+    right: 72px;
+  }
+}
+@media (max-width: 768px) {
+  .toggle {
+    top: 16px;
+    right: 48px;
+  }
+}

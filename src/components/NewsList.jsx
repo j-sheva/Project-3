@@ -4,7 +4,7 @@ import NewsItem from './NewsItem';
 import { useParams } from 'react-router-dom';
 import './NewsList.css';
 
-const API_KEY = 'e9268e793e0b4fecbec3295ade16b3c4'; // Вставте ваш ключ API сюди
+const API_KEY = 'e9268e793e0b4fecbec3295ade16b3c4';
 const BASE_URL = 'https://newsapi.org/v2/top-headlines';
 
 const NewsList = ({ filters }) => {

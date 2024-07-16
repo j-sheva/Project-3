@@ -4,6 +4,15 @@ form {
   justify-content: left;
   gap: 32px;
 }
+@media (max-width: 768px) {
+  form {
+    padding: 16px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .form_wrapper.light {
   background-color: black;
 }

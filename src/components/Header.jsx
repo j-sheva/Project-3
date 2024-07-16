@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import ThemeToggle from './ThemeToggle';
 import './Header.css';
@@ -14,6 +14,7 @@ const categories = [
 ];
 
 const Header = ({ theme, toggleTheme, setFilters }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
 
   const handleCategoryClick = (category) => {
@@ -22,6 +23,7 @@ const Header = ({ theme, toggleTheme, setFilters }) => {
       category: category,
     }));
     navigate(`/category/${category}`);
+    setMenuOpen(false);
   };
 
   const handleLogoClick = () => {
@@ -30,6 +32,10 @@ const Header = ({ theme, toggleTheme, setFilters }) => {
       ...prevFilters,
       category: 'general',
     }));
+  };
+
+  const toggleMenu = () => {
+    setMenuOpen((prevOpen) => !prevOpen);
   };
 
   return (
@@ -41,7 +47,7 @@ const Header = ({ theme, toggleTheme, setFilters }) => {
           alt="logo"
           onClick={handleLogoClick}
         />
-        <nav className="navigation">
+        <nav className={`navigation ${menuOpen ? 'open' : ''}`}>
           <div className="column">
             {categories.slice(0, 3).map((category) => (
               <Link
@@ -76,6 +82,9 @@ const Header = ({ theme, toggleTheme, setFilters }) => {
             ))}
           </div>
         </nav>
+        <div className="menu-icon" onClick={toggleMenu}>
+          &#9776;
+        </div>
         <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
       </div>
     </header>
